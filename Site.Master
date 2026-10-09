@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DiziOneriWebSitesii.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="tr">
+
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %></title>
+    <link href="CSS/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+
+        <header>
+            <div class="logo">
+                <a href="Default.aspx">✦ Dizi Öneri Sitesi ✦</a>
+            </div>
+            <nav>
+                <a href="Default.aspx">Ana Sayfa</a>
+                <a href="Diziler.aspx">Diziler</a>
+                <a href="HaftaninOnerileri.aspx">Haftanın Önerileri</a>
+                <a href="Iletisim.aspx">İletişim</a>
+                <a href="Admin/Login.aspx">Admin</a>
+            </nav>
+        </header>
+
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer>
+            © 2026 Dizi Öneri Sitesi
+        </footer>
+
+    </form>
+
+</body>
+
+</html>
